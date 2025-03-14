@@ -46,14 +46,14 @@ void main() {
       print("Oh, dann hab ich das verwechselt, du wolltest ja nach Norwegen.");
 
       print(
-          "lass uns doch mal sehen, wie der Umrechnungskurs dort ist und Gib doch mal bitte einen Betrag in EURO ein:");
+          "Lass uns doch mal sehen, wie der Umrechnungskurs dort ist. Gib doch mal bitte einen Betrag in EURO ein:");
 
       String inputEur = stdin.readLineSync() ?? "";
       double euroAmount = double.parse(inputEur);
       print(
           "Danke, also $euroAmount EURO sind ${euroToNok(euroAmount).toStringAsFixed(2)} in norwegischen Kronen.");
       print(
-          "jetzt mal ander herum, gib mal eine Betrag in norwegische Kronen ein.");
+          "jetzt mal andes herum, gib mal eine Betrag in norwegische Kronen ein.");
 
       String inputNok = stdin.readLineSync() ?? "";
       double nokAmount = double.parse(inputNok);
@@ -62,5 +62,5 @@ void main() {
   }
 
   print(
-      "jetzt weißt du Bescheid. Einen wundervollen Urlaub wünsch ich dir $name.");
+      "Jetzt weißt du Bescheid. Einen wundervollen Urlaub wünsch ich dir $name.");
 }
